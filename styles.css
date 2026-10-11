@@ -40,3 +40,25 @@
 /* V5: subtle patent-pending identification */
 .patent-pending{text-align:center;margin:14px auto 0;color:#76551c;font-weight:800;letter-spacing:.13em;text-transform:uppercase;font-size:.82rem}
 .footer-patent{display:inline-block;margin-top:8px;font-size:.8rem;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:#f1d28a}
+
+/* v5.6: blue/orange brand system based on supplied HuntAlong artwork */
+:root{--cream:#fff6e7;--paper:#fffaf2;--blue:#086ad5;--blue2:#074d9d;--gold:#ff9b17;--ink:#153453;--muted:#526b84;--ha-deep-blue:#086ad5;--ha-gold:#ff9b17}
+.topbar,.footer{background:#063c86}
+.brand-link{display:inline-flex;align-items:center;gap:2px;color:#fff;text-decoration:none;font-size:1.24rem;white-space:nowrap}
+.brand-pin{color:#ff9b17;font-size:1.4rem;margin-right:5px}.brand-orange{color:#ff7b28}
+.hero{background:linear-gradient(140deg,#fff9ed 0%,#f4f9ff 65%,#e8f3ff 100%)}
+.brand-intro{border-bottom:3px solid #ff9b17;padding:8px 0 15px;text-align:center}
+.brand-kicker{color:#075cbd;font-size:.91rem;font-weight:900;letter-spacing:.22em}
+.brand-art{max-width:400px;margin:auto;padding:9px;background:#fff;border-radius:20px;box-shadow:0 20px 50px rgba(7,63,134,.19)}
+.brand-art img{display:block;width:100%;height:auto;border-radius:12px}
+.button,.signup-card .button{background:#ff5c20;border-color:#ff5c20;color:white}
+.button.alt{background:white;color:#075cbd;border-color:#0c6de0}
+.card{border-color:#f7c677}.num{background:#086ad5}
+.feature{border-left-color:#ff8b2c}
+.patent-pending{color:#075cbd}.footer-patent{color:#ffbc64}
+@media(max-width:800px){.brand-art{max-width:360px}.brand-kicker{letter-spacing:.12em}}
+
+/* v5.7 approved white hanger-pin mark in header */
+.brand-link{gap:5px}
+.brand-pin-logo{width:28px;height:34px;display:block;flex-shrink:0;object-fit:contain;margin-right:3px}
+@media(max-width:500px){.brand-pin-logo{width:26px;height:31px}}
