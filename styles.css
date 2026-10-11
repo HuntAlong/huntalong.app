@@ -62,3 +62,16 @@
 .brand-link{gap:5px}
 .brand-pin-logo{width:28px;height:34px;display:block;flex-shrink:0;object-fit:contain;margin-right:3px}
 @media(max-width:500px){.brand-pin-logo{width:26px;height:31px}}
+
+/* v5.8: hard layout constraints and consistent navigation contrast */
+.topbar{background:#063c86}
+.topbar .wrap{max-width:1120px}
+.topbar a.brand-link,.topbar a.brand-link:visited{color:#fff!important;text-decoration:none!important;font-weight:800;letter-spacing:.02em}
+.topbar a.brand-link .brand-orange{color:#ff7b28!important}
+.topbar .brand-pin-logo{width:28px;height:34px;max-width:28px;max-height:34px;flex:0 0 28px}
+.hero-grid{grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);align-items:center;gap:clamp(20px,4vw,54px)}
+.hero-grid>div{min-width:0}
+.hero-grid .brand-art{width:100%;max-width:400px;min-width:0;margin-inline:auto;overflow:hidden}
+.hero-grid .brand-art img{display:block;width:100%;max-width:100%;height:auto;object-fit:contain}
+@media(max-width:800px){.hero-grid{grid-template-columns:minmax(0,1fr)}.hero-grid .brand-art{max-width:360px}}
+@media(max-width:500px){.topbar .brand-pin-logo{width:26px;height:31px;max-width:26px;max-height:31px;flex-basis:26px}}
