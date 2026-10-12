@@ -75,3 +75,29 @@
 .hero-grid .brand-art img{display:block;width:100%;max-width:100%;height:auto;object-fit:contain}
 @media(max-width:800px){.hero-grid{grid-template-columns:minmax(0,1fr)}.hero-grid .brand-art{max-width:360px}}
 @media(max-width:500px){.topbar .brand-pin-logo{width:26px;height:31px;max-width:26px;max-height:31px;flex-basis:26px}}
+
+/* Beta application wizard v6.0 */
+.beta-card{max-width:650px}.beta-card .beta-step[hidden]{display:none!important}
+.beta-card fieldset{border:0;min-width:0;margin:0;padding:0}
+.beta-card legend{display:block;width:100%;margin:0 0 14px;padding:0;color:#123b67}
+.beta-card .beta-counter{display:block;font-size:.85rem;font-weight:700;color:#1266b7;margin-bottom:10px}
+.beta-card .beta-question{display:block;font-size:1.18rem;font-weight:750;line-height:1.4}
+.beta-card .beta-progress{height:7px;border-radius:8px;background:#e2eaf2;margin:12px 0 20px;overflow:hidden}
+.beta-card .beta-progress span{display:block;height:100%;background:#1686d9}
+.beta-card .beta-option{display:flex;align-items:flex-start;gap:12px;padding:10px 4px;font-weight:400;cursor:pointer;line-height:1.4}
+.beta-card .beta-option input{flex:none;margin:4px 0 0;accent-color:#0968c3;width:18px;height:18px}
+.beta-card textarea{width:100%;box-sizing:border-box;padding:12px;border:1px solid #aeb9c0;border-radius:9px;font:inherit;resize:vertical}
+.beta-card .beta-nav{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:22px}
+.beta-card .beta-back{background:transparent;border:1px solid #b9c7d3;color:#174b7a;border-radius:28px;padding:10px 16px;font:inherit;cursor:pointer}
+.beta-card button:focus-visible,.beta-card textarea:focus-visible{outline:3px solid #f9a44c;outline-offset:2px}
+.beta-card #signup-status{margin-top:10px}
+@media(max-width:460px){.beta-card .beta-nav{flex-wrap:wrap}.beta-card .beta-question{font-size:1.08rem}}
+
+/* v6.1 optional post-signup questionnaire */
+#questionnaire-panel[hidden],#signup-success[hidden],#signup-finished[hidden],#questionnaire-success[hidden]{display:none!important}
+#questionnaire-panel{margin-top:14px;text-align:left}
+#questionnaire-panel h3{margin-bottom:18px}
+#questionnaire-panel .beta-step[hidden]{display:none!important}
+.beta-skip{display:block;margin:18px auto 0;padding:8px;background:none;border:0;color:#165b9a;text-decoration:underline;cursor:pointer;font:inherit}
+#signup-success .beta-nav{justify-content:center;flex-wrap:wrap}
+#signup-success .beta-back{font-size:1rem}
