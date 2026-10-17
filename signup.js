@@ -56,3 +56,18 @@ document.addEventListener('DOMContentLoaded',()=>{
    finally{surveyButton.disabled=false;surveyButton.textContent='Submit beta application';}
  });
 });
+/* Record where a visitor came from (utm_source / utm_campaign links, or the referring site) in a hidden "source" field on both forms. */
+(function(){
+  var KEY='huntalong_source',src='';
+  try{
+    var q=new URLSearchParams(location.search),u=q.get('utm_source');
+    if(u){src=u+(q.get('utm_campaign')?' / '+q.get('utm_campaign'):'');}
+    else if(document.referrer){var h=new URL(document.referrer).hostname;if(h&&h!==location.hostname)src='referral: '+h;}
+    if(src){try{sessionStorage.setItem(KEY,src);}catch(e){}}
+    else{try{src=sessionStorage.getItem(KEY)||'';}catch(e){}}
+  }catch(e){}
+  if(!src)src='direct';
+  src=src.slice(0,120);
+  var f=document.querySelectorAll('input.signup-source');
+  for(var i=0;i<f.length;i++)f[i].value=src;
+})();
