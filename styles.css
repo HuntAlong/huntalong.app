@@ -143,3 +143,6 @@
 .founder-play:hover .play-badge,.founder-play:focus-visible .play-badge{transform:translate(-50%,-50%) scale(1.08)}
 .founder-play:focus-visible{outline:4px solid #111;outline-offset:-4px}
 .play-label{position:absolute;left:50%;bottom:18px;transform:translateX(-50%);background:rgba(13,54,81,.88);color:#fff;font-weight:800;padding:6px 14px;border-radius:999px;font-size:.95rem;white-space:nowrap}
+
+.signup-card select{width:100%;box-sizing:border-box;padding:13px 14px;border:1px solid #aeb9c0;border-radius:9px;font:inherit;background:white;color:#172d3d;appearance:auto}
+.signup-card select:focus-visible{outline:3px solid #d7a94b;outline-offset:2px}
